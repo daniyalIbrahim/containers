@@ -1,9 +1,6 @@
 FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
-LABEL org.opencontainers.image.source=https://github.com/daniyalibrahim/containers
-LABEL org.opencontainers.image.description="container image for postfix smtp server"
-LABEL org.opencontainers.image.licenses=MIT
 
 RUN echo "postfix postfix/mailname string DOMAIN_PLACEHOLDER" | debconf-set-selections && \
     echo "postfix postfix/main_mailer_type string 'Internet Site'" | debconf-set-selections && \
