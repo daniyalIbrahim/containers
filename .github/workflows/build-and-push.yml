@@ -29,7 +29,7 @@ jobs:
         context: .
         file: ./Containerfile
         push: true
-        tags: ${{ env.DOCKER_HUB_USERNAME }}/${{ env.APP_NAME }}:${{ env.TAG }}
+        tags: ${{ env.APP_NAME }}:${{ env.TAG }}
 
   build-and-push-github-package:
     runs-on: ubuntu-latest
