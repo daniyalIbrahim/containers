@@ -7,7 +7,7 @@ permissions:
   contents: 'read'
 
 env:
-  APP_NAME: ""
+  APP_NAME: "template"
   TAG: "v1.0.0"
 
 jobs:
