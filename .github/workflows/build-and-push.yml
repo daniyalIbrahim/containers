@@ -27,4 +27,4 @@ jobs:
     - name: Build and Push Docker Image
       run: |
         docker build . --tag ghcr.io/daniyalibrahim/containers/${{ env.APP_NAME }}:${{ env.TAG }} -f Containerfile
-        docker push ghcr.io/daniyalibrahim/containers/${{ env.APP_NAME }}:${{ env.TAG }}
+        docker push ghcr.io/daniyalibrahim/containers:${{ env.TAG }}
