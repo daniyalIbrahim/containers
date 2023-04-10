@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-LABEL org.opencontainers.image.source=https://github.com/daniyalibrahim/postfix
+LABEL org.opencontainers.image.source=https://github.com/daniyalibrahim/containers
 LABEL org.opencontainers.image.description="container image for postfix smtp server"
 LABEL org.opencontainers.image.licenses=MIT
 
