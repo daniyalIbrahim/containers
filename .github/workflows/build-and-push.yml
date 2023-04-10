@@ -10,7 +10,7 @@ env:
 
 jobs:
   build-and-push-github-package:
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest
     name: build ${{ github.ref_name }}
 
     steps:
@@ -43,7 +43,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker image to DockerHub
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           file: ./Containerfile
